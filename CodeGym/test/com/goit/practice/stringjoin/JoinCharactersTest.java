@@ -35,4 +35,6 @@ public class JoinCharactersTest {
 
         Assert.assertEquals("Characters should be joined correctly for three element array", expected, actualResult);
     }
+
+
 }
