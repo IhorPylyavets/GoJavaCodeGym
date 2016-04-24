@@ -15,6 +15,6 @@ public class FindMaxNumberTest {
 
         int actualResult = findMaxNumber.max(input);
 
-        Assert.assertEquals("Digits should be joined correctly random array", expected, actualResult);
+        Assert.assertEquals("FindMaxNumber should be find correctly random array", expected, actualResult);
     }
 }

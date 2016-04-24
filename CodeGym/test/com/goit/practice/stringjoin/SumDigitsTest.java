@@ -15,7 +15,7 @@ public class SumDigitsTest {
 
         int actualResult = sumDigits.sum(number);
 
-        Assert.assertEquals("Digits should be joined correctly for one", expected, actualResult);
+        Assert.assertEquals("SumDigits should be sum correctly for one", expected, actualResult);
     }
 
     @Test
@@ -25,7 +25,7 @@ public class SumDigitsTest {
 
         int actualResult = sumDigits.sum(number);
 
-        Assert.assertEquals("Digits should be joined correctly for zero", expected, actualResult);
+        Assert.assertEquals("SumDigits should be sum correctly for zero", expected, actualResult);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class SumDigitsTest {
 
         int actualResult = sumDigits.sum(number);
 
-        Assert.assertEquals("Digits should be joined correctly for random number", expected, actualResult);
+        Assert.assertEquals("SumDigits should be sum correctly for random number", expected, actualResult);
     }
 
     @Test
@@ -45,7 +45,7 @@ public class SumDigitsTest {
 
         int actualResult = sumDigits.sum(number);
 
-        Assert.assertEquals("Digits should be joined correctly negative random number", expected, actualResult);
+        Assert.assertEquals("SumDigits should be sum correctly negative random number", expected, actualResult);
     }
 
     @Test
@@ -55,7 +55,7 @@ public class SumDigitsTest {
 
         int actualResult = sumDigits.sum(number);
 
-        Assert.assertEquals("Digits should be joined correctly negative Integer limit number", expected, actualResult);
+        Assert.assertEquals("SumDigits should be sum correctly negative Integer limit number", expected, actualResult);
     }
 
     @Test
@@ -65,6 +65,6 @@ public class SumDigitsTest {
 
         int actualResult = sumDigits.sum(number);
 
-        Assert.assertEquals("Digits should be joined correctly positive Integer limit number", expected, actualResult);
+        Assert.assertEquals("SumDigits should be sum correctly positive Integer limit number", expected, actualResult);
     }
 }

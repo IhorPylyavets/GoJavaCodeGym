@@ -15,7 +15,7 @@ public class FirstOddNumberTest {
 
         int actualResult = firstOddNumber.find(input);
 
-        Assert.assertEquals("Digits should be joined correctly for empty array", expected, actualResult);
+        Assert.assertEquals("FirstOddNumber should be find correctly for empty array", expected, actualResult);
     }
 
     @Test
@@ -25,7 +25,7 @@ public class FirstOddNumberTest {
 
         int actualResult = firstOddNumber.find(input);
 
-        Assert.assertEquals("Digits should be joined correctly random array", expected, actualResult);
+        Assert.assertEquals("FirstOddNumber should be find correctly random array", expected, actualResult);
     }
 
     @Test
@@ -35,6 +35,6 @@ public class FirstOddNumberTest {
 
         int actualResult = firstOddNumber.find(input);
 
-        Assert.assertEquals("Digits should be joined correctly random array without odd number", expected, actualResult);
+        Assert.assertEquals("FirstOddNumber should be find correctly random array without odd number", expected, actualResult);
     }
 }
