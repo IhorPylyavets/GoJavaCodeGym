@@ -22,20 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MatrixTraversal.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MatrixTraversal.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/goit/practice/stringjoin/MatrixTraversal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.04988662">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatrixTraversalTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MatrixTraversalTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/goit/practice/stringjoin/MatrixTraversalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6984127">
+            <state vertical-scroll-proportion="0.0">
               <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding />
             </state>
@@ -802,18 +802,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/goit/practice/stringjoin/MatrixTraversal.java">
+    <entry file="file://$PROJECT_DIR$/test/com/goit/practice/stringjoin/MatrixTraversalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="28" />
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/goit/practice/stringjoin/MatrixTraversalTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/goit/practice/stringjoin/MatrixTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6984127">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.04988662">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="28" />
           <folding />
         </state>
       </provider>
