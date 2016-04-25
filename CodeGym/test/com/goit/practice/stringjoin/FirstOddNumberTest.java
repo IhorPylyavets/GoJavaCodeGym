@@ -21,7 +21,7 @@ public class FirstOddNumberTest {
     @Test
     public void testFindRandomArray() throws Exception {
         int[] input = {6, 7, 3, -5, 8, 13};
-        int expected = 3;
+        int expected = 1;
 
         int actualResult = firstOddNumber.find(input);
 
@@ -30,8 +30,8 @@ public class FirstOddNumberTest {
 
     @Test
     public void testFindRandomArrayWithoutOdd() throws Exception {
-        int[] input = {6, 7, 3, 8, 13};
-        int expected = -1;
+        int[] input = {6, 2, 3, 8, 13};
+        int expected = 2;
 
         int actualResult = firstOddNumber.find(input);
 

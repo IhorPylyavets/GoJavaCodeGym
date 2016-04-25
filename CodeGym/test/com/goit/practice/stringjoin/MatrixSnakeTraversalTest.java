@@ -37,4 +37,14 @@ public class MatrixSnakeTraversalTest {
 
         Assert.assertArrayEquals("MatrixSnakeTraversal should be created correctly for array 4*3", expected, actualResult);
     }
+
+    @Test
+    public void testPrintMatrixThreeFive() throws Exception {
+        int[][] input = {{1, 2, 3, 4, 5 }, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}};
+        int[] expected = { 1, 6, 11, 12, 7, 2, 3, 8, 13, 14, 9, 4, 5, 10, 15};
+
+        int[] actualResult = matrixSnakeTraversal.print(input);
+
+        Assert.assertArrayEquals("MatrixSnakeTraversal should be created correctly for array 4*3", expected, actualResult);
+    }
 }

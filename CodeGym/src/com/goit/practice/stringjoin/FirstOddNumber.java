@@ -7,7 +7,7 @@ public class FirstOddNumber {
         }
 
         for (int i = 0; i < input.length; i++) {
-            if (input[i] < 0)
+            if (input[i]%2 != 0)
                 return i;
         }
 
