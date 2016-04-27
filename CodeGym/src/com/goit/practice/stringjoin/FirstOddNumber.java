@@ -1,5 +1,10 @@
 package com.goit.practice.stringjoin;
 
+/*
+* Знайти перше непарне число і повернути його індекс.
+Якщо такого немає, повернути -1
+* */
+
 public class FirstOddNumber {
     public int find(int[] input) {
         if(input.length==0) {

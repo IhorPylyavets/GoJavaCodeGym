@@ -1,5 +1,10 @@
 package com.goit.practice.stringjoin;
 
+/*
+* Знайти максимальне число в масиві.
+Гарантується, що масив завжди не пустий.
+* */
+
 public class FindMaxNumber {
     public int max(int[] input) {
         int max = input[0];
