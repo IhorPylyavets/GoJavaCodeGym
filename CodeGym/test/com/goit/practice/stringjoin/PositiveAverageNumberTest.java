@@ -5,9 +5,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by vbevz on 4/27/2016.
- */
 public class PositiveAverageNumberTest {
     PositiveAverageNumber positiveAverageNumber = new PositiveAverageNumber();
 
@@ -15,7 +12,6 @@ public class PositiveAverageNumberTest {
     public void testAverage() throws Exception {
         int a = 2;
         int b = 4;
-        //average( 4, 7 ) = 5
         int expected = 3;
 
         int actualResult = positiveAverageNumber.average(a, b);
