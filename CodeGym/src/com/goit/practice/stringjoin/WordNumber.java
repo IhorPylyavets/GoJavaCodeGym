@@ -8,29 +8,28 @@ package com.goit.practice.stringjoin;
 
 public class WordNumber {
     public int count(String input) {
-        if (input.length() == 0) return 0;
+        int result = 0;
+        StringBuilder stringBuilder = new StringBuilder();
 
-        String[] arr = input.split(" ");
-        int count = 0;
-
-        for (String word : arr) {
-            if (isWord(word)) {
-                count += 1;
+        for (int i = 0; i < input.length(); i++) {
+            if (isCharLetter(input.charAt(i))) {
+                stringBuilder.append(input.charAt(i));
+            } else {
+                if (stringBuilder.length() > 0) {
+                    result++;
+                    stringBuilder = new StringBuilder();
+                }
             }
         }
 
-        return count;
+        if (stringBuilder.length() > 0) {
+            result++;
+        }
+
+        return result;
     }
 
-    private boolean isWord(String word) {
-        char[] wordArray = word.toCharArray();
-
-        for (int i = 0; i < wordArray.length; i++) {
-            if (!((wordArray[i] >= 'A' && wordArray[i] <= 'Z') || (wordArray[i] >= 'a' && wordArray[i] <= 'z'))) {
-                return false;
-            }
-        }
-
-        return true;
+    private boolean isCharLetter(char c) {
+        return  ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
     }
 }

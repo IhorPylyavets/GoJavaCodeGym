@@ -18,8 +18,8 @@ public class WordNumberTest {
 
     @Test
     public void testCount() throws Exception {
-        String input = "Android BroadCastReceiver for volume key up and] down";
-        int expected = 7;
+        String input = "Android BroadCas/tReceiver for volume key up and] down";
+        int expected = 9;
 
         int actualResult = wordNumber.count(input);
 
