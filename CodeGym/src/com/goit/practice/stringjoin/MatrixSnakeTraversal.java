@@ -13,17 +13,14 @@ package com.goit.practice.stringjoin;
 
 public class MatrixSnakeTraversal {
     public int[] print(int[][] input) {
-        int rows = input.length;
-        int cols = input[0].length;
+        int[] result = new int[input.length * input[0].length];
 
-        int[] result = new int[rows*cols];
-
-        for(int i = 0, k;i < rows; i++){
-            for(int j = 0;j < cols; j++){
+        for(int i = 0, k;i < input.length; i++){
+            for(int j = 0;j < input[0].length; j++){
                 if (j % 2 == 0) {
-                    k = j*rows + i;
+                    k = j * input.length + i;
                 } else {
-                    k = ((j + 1) * rows) - i - 1;
+                    k = ((j + 1) * input.length) - i - 1;
                 }
                 result[k] = input[i][j];
             }
