@@ -1,31 +1,39 @@
 package com.goit.practice.stringjoin;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class UnixPath {
     public String simplify(String input) {
-        List<String> path = new ArrayList<>(Arrays.asList(input.split("/")));
+        if (input.length() > 4096){
+            return "/";
+        }
 
-        boolean flag = false;
+        String[] pathArray = input.split("/");
+        List<String> pathList = new ArrayList<>();
 
-        for (int i = path.size()-1; i >= 0; i--) {
-            if (path.get(i).equals("..")) {
-                flag = true;
+        for (int i = 0; i < pathArray.length; i++) {
+            if (pathArray[i].equals("..")) {
+                pathList.remove(pathList.size()-1);
+                continue;
             }
-            if (path.get(i).equals("") || path.get(i).equals(".") || flag) {
-                path.remove(path.get(i));
+            if (!(pathArray[i].equals("") || pathArray[i].equals("."))) {
+                pathList.add(pathArray[i]);
             }
         }
 
-        StringBuilder result = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder();
 
-        for (int i = 0; i < path.size(); i++) {
-            result.append("/");
-            result.append(path.get(i));
+        for (String pathElement : pathList) {
+            stringBuilder.append("/");
+            stringBuilder.append(pathElement);
         }
 
-        return result.toString();
+        if (pathList.size() == 0) {
+            stringBuilder.append("/");
+        }
+
+        return stringBuilder.toString();
     }
 }
+
